@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="18" timestamp="1571200890187" analysisTimestamp="1571200889877" release="">
+  <Project projectName="test">
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\test\bin\NaturalNumberRoot.class</Jar>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\test\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-9.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\test\src</SrcDir>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\test\test</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="5" last="11" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="root" signature="(Lcomponents/naturalnumber/NaturalNumber;I)V" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="33" end="70" startBytecode="0" endBytecode="111" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <LocalVariable name="counter" register="2" pc="76" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="NaturalNumberRoot" start="39" end="39" startBytecode="75" endBytecode="75" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <SourceLine classname="NaturalNumberRoot" start="39" end="39" startBytecode="75" endBytecode="75" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="counter"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="5" last="14" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="root" signature="(Lcomponents/naturalnumber/NaturalNumber;I)V" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="33" end="64" startBytecode="0" endBytecode="96" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <LocalVariable name="middle" register="5" pc="85" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="NaturalNumberRoot" start="41" end="41" startBytecode="83" endBytecode="83" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <SourceLine classname="NaturalNumberRoot" start="41" end="41" startBytecode="83" endBytecode="83" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="middle"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="5" last="14" removedByChange="true">
+    <Class classname="NaturalNumberRoot">
+      <SourceLine classname="NaturalNumberRoot" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Class>
+    <Method classname="NaturalNumberRoot" name="root" signature="(Lcomponents/naturalnumber/NaturalNumber;I)V" isStatic="true">
+      <SourceLine classname="NaturalNumberRoot" start="33" end="64" startBytecode="0" endBytecode="96" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    </Method>
+    <LocalVariable name="root" register="4" pc="75" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="NaturalNumberRoot" start="40" end="40" startBytecode="73" endBytecode="73" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <SourceLine classname="NaturalNumberRoot" start="40" end="40" startBytecode="73" endBytecode="73" sourcefile="NaturalNumberRoot.java" sourcepath="NaturalNumberRoot.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="root"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 16 Oct 2019 00:41:29 -0400" total_classes="1" referenced_classes="17" total_bugs="0" total_size="63" num_packages="1" java_version="9.0.1" vm_version="9.0.1+11" cpu_seconds="1.00" clock_seconds="0.32" peak_mbytes="641.74" alloc_mbytes="1024.00" gc_seconds="0.03">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="63">
+      <ClassStats class="NaturalNumberRoot" sourceFile="NaturalNumberRoot.java" interface="false" size="63" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="111" invocations="2" avgMicrosecondsPerInvocation="55835" maxMicrosecondsPerInvocation="107148" standardDeviationMicrosecondsPerInvocation="51313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="64" invocations="344" avgMicrosecondsPerInvocation="188" maxMicrosecondsPerInvocation="3138" standardDeviationMicrosecondsPerInvocation="371"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="44" invocations="345" avgMicrosecondsPerInvocation="128" maxMicrosecondsPerInvocation="11774" standardDeviationMicrosecondsPerInvocation="630"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1571196246446" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1571196246446" release="" codeSize="61" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1571196366300" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1571196492714" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1571196695478" release="" codeSize="60" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1571199608550" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1571199752273" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1571199760599" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1571199790530" release="" codeSize="66" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1571200003686" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1571200050676" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1571200074657" release="" codeSize="64" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1571200091637" release="" codeSize="59" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1571200151002" release="" codeSize="59" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1571200175239" release="" codeSize="60" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1571200757647" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1571200786384" release="" codeSize="61" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1571200807282" release="" codeSize="61" numClasses="1"/>
+  </History>
+</BugCollection>

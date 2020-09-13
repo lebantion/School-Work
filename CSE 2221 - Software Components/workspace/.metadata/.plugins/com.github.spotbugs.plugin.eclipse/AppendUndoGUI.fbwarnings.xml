@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="36" timestamp="1574405814754" analysisTimestamp="1574405814489" release="">
+  <Project projectName="AppendUndoGUI">
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\AppendUndoGUI\bin\AppendUndoModel1.class</Jar>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\AppendUndoGUI\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-9.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\AppendUndoGUI\src</SrcDir>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\AppendUndoGUI\test</SrcDir>
+  </Project>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1" last="1" removedByChange="true">
+    <Class classname="AppendUndoController1">
+      <SourceLine classname="AppendUndoController1" sourcefile="AppendUndoController1.java" sourcepath="AppendUndoController1.java"/>
+    </Class>
+    <Field classname="AppendUndoController1" name="model" signature="LDemoModel;" isStatic="false">
+      <SourceLine classname="AppendUndoController1" start="12" end="12" startBytecode="0" endBytecode="0" sourcefile="AppendUndoController1.java" sourcepath="AppendUndoController1.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1" last="1" removedByChange="true">
+    <Class classname="AppendUndoController1">
+      <SourceLine classname="AppendUndoController1" sourcefile="AppendUndoController1.java" sourcepath="AppendUndoController1.java"/>
+    </Class>
+    <Field classname="AppendUndoController1" name="view" signature="LDemoView;" isStatic="false">
+      <SourceLine classname="AppendUndoController1" start="17" end="17" startBytecode="0" endBytecode="0" sourcefile="AppendUndoController1.java" sourcepath="AppendUndoController1.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="3" last="3" removedByChange="true">
+    <Class classname="AppendUndoModel1">
+      <SourceLine classname="AppendUndoModel1" sourcefile="AppendUndoModel1.java" sourcepath="AppendUndoModel1.java"/>
+    </Class>
+    <Field classname="AppendUndoModel1" name="output" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="AppendUndoModel1" sourcefile="AppendUndoModel1.java" sourcepath="AppendUndoModel1.java"/>
+    </Field>
+    <SourceLine classname="AppendUndoModel1" start="22" end="22" startBytecode="13" endBytecode="13" sourcefile="AppendUndoModel1.java" sourcepath="AppendUndoModel1.java"/>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1" last="2" removedByChange="true">
+    <Class classname="AppendUndoModel1">
+      <SourceLine classname="AppendUndoModel1" sourcefile="AppendUndoModel1.java" sourcepath="AppendUndoModel1.java"/>
+    </Class>
+    <Field classname="AppendUndoModel1" name="input" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="AppendUndoModel1" start="12" end="12" startBytecode="0" endBytecode="0" sourcefile="AppendUndoModel1.java" sourcepath="AppendUndoModel1.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="UUF_UNUSED_FIELD" priority="2" rank="18" abbrev="UuF" category="PERFORMANCE" first="1" last="2" removedByChange="true">
+    <Class classname="AppendUndoModel1">
+      <SourceLine classname="AppendUndoModel1" sourcefile="AppendUndoModel1.java" sourcepath="AppendUndoModel1.java"/>
+    </Class>
+    <Field classname="AppendUndoModel1" name="output" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="AppendUndoModel1" start="12" end="12" startBytecode="0" endBytecode="0" sourcefile="AppendUndoModel1.java" sourcepath="AppendUndoModel1.java"/>
+    </Field>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 22 Nov 2019 01:56:54 -0500" total_classes="1" referenced_classes="15" total_bugs="0" total_size="16" num_packages="1" java_version="9.0.1" vm_version="9.0.1+11" cpu_seconds="0.69" clock_seconds="0.27" peak_mbytes="759.23" alloc_mbytes="1024.00" gc_seconds="0.02">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="16">
+      <ClassStats class="AppendUndoModel1" sourceFile="AppendUndoModel1.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="99" invocations="2" avgMicrosecondsPerInvocation="49653" maxMicrosecondsPerInvocation="95068" standardDeviationMicrosecondsPerInvocation="45415"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="65" invocations="334" avgMicrosecondsPerInvocation="197" maxMicrosecondsPerInvocation="3291" standardDeviationMicrosecondsPerInvocation="404"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="35" invocations="335" avgMicrosecondsPerInvocation="105" maxMicrosecondsPerInvocation="398" standardDeviationMicrosecondsPerInvocation="39"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1574398154136" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1574398154137" release="" codeSize="65" numClasses="7"/>
+    <AppVersion sequence="2" timestamp="1574398162761" release="" codeSize="18" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1574398402342" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1574398520279" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1574398704221" release="" codeSize="55" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1574398995819" release="" codeSize="5" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1574399007088" release="" codeSize="18" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1574399117085" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1574399120734" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1574399128397" release="" codeSize="5" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1574399141227" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1574399148046" release="" codeSize="5" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1574399210013" release="" codeSize="5" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1574399252106" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1574399280281" release="" codeSize="31" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1574399306143" release="" codeSize="31" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1574403729282" release="" codeSize="15" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1574403733791" release="" codeSize="4" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1574403826298" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1574404262753" release="" codeSize="61" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1574404269524" release="" codeSize="29" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1574404284190" release="" codeSize="5" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1574404511240" release="" codeSize="56" numClasses="2"/>
+    <AppVersion sequence="24" timestamp="1574404539682" release="" codeSize="62" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1574404789661" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1574404837529" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1574405023178" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1574405028635" release="" codeSize="4" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1574405355896" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1574405358199" release="" codeSize="70" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1574405446748" release="" codeSize="33" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1574405591716" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1574405730966" release="" codeSize="5" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1574405751896" release="" codeSize="72" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1574405761216" release="" codeSize="33" numClasses="1"/>
+  </History>
+</BugCollection>

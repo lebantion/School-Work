@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="2" timestamp="1573602524177" analysisTimestamp="1573602523154" release="">
+  <Project projectName="ProjectTemplate5">
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\ProjectTemplate5\bin\ProgramWithIOAndStaticMethod.class</Jar>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\ProjectTemplate5\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-9.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\ProjectTemplate5\test</SrcDir>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\ProjectTemplate5\src</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="2">
+    <Class classname="ProgramWithIOAndStaticMethod">
+      <SourceLine classname="ProgramWithIOAndStaticMethod" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    </Class>
+    <Method classname="ProgramWithIOAndStaticMethod" name="sequenceFlip2" signature="()V" isStatic="false">
+      <SourceLine classname="ProgramWithIOAndStaticMethod" start="54" end="70" startBytecode="0" endBytecode="49" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    </Method>
+    <LocalVariable name="temp2" register="2" pc="40" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="ProgramWithIOAndStaticMethod" start="60" end="60" startBytecode="39" endBytecode="39" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    <SourceLine classname="ProgramWithIOAndStaticMethod" start="60" end="60" startBytecode="39" endBytecode="39" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="temp2"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 12 Nov 2019 18:48:43 -0500" total_classes="1" referenced_classes="17" total_bugs="1" total_size="34" num_packages="1" java_version="9.0.1" vm_version="9.0.1+11" cpu_seconds="2.14" clock_seconds="1.02" peak_mbytes="1087.22" alloc_mbytes="1024.00" gc_seconds="0.36" priority_1="1">
+    <PackageStats package="" total_bugs="1" total_types="1" total_size="34" priority_1="1">
+      <ClassStats class="ProgramWithIOAndStaticMethod" sourceFile="ProgramWithIOAndStaticMethod.java" interface="false" size="34" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="344" invocations="2" avgMicrosecondsPerInvocation="172274" maxMicrosecondsPerInvocation="338750" standardDeviationMicrosecondsPerInvocation="166476"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="233" invocations="17" avgMicrosecondsPerInvocation="13746" maxMicrosecondsPerInvocation="229191" standardDeviationMicrosecondsPerInvocation="53864"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="134" invocations="344" avgMicrosecondsPerInvocation="391" maxMicrosecondsPerInvocation="49433" standardDeviationMicrosecondsPerInvocation="2859"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="59" invocations="345" avgMicrosecondsPerInvocation="172" maxMicrosecondsPerInvocation="18632" standardDeviationMicrosecondsPerInvocation="998"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1573543255549" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1573543255549" release="" codeSize="13" numClasses="1"/>
+  </History>
+</BugCollection>

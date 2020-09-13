@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="56" timestamp="1575346860095" analysisTimestamp="1575346859676" release="">
+  <Project projectName="StringReassemblyFromFragments">
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\StringReassemblyFromFragments\bin\StringReassembly.class</Jar>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\StringReassemblyFromFragments\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-9.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\StringReassemblyFromFragments\src</SrcDir>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\StringReassemblyFromFragments\test</SrcDir>
+  </Project>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="38">
+    <Class classname="StringReassemblyTest">
+      <SourceLine classname="StringReassemblyTest" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Class>
+    <Method classname="StringReassemblyTest" name="avoidingSubStrTest" signature="()V" isStatic="false">
+      <SourceLine classname="StringReassemblyTest" start="83" end="99" startBytecode="0" endBytecode="29" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Method>
+    <LocalVariable name="input" register="1" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="StringReassemblyTest" start="83" end="83" startBytecode="9" endBytecode="9" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <SourceLine classname="StringReassemblyTest" start="83" end="83" startBytecode="9" endBytecode="9" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="input"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="38">
+    <Class classname="StringReassemblyTest">
+      <SourceLine classname="StringReassemblyTest" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Class>
+    <Method classname="StringReassemblyTest" name="avoidingSubStrTest" signature="()V" isStatic="false">
+      <SourceLine classname="StringReassemblyTest" start="83" end="99" startBytecode="0" endBytecode="29" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Method>
+    <LocalVariable name="out" register="2" pc="18" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="StringReassemblyTest" start="84" end="84" startBytecode="17" endBytecode="17" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <SourceLine classname="StringReassemblyTest" start="84" end="84" startBytecode="17" endBytecode="17" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="out"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="41">
+    <Class classname="StringReassemblyTest">
+      <SourceLine classname="StringReassemblyTest" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Class>
+    <Method classname="StringReassemblyTest" name="avoidingSubStrTest2" signature="()V" isStatic="false">
+      <SourceLine classname="StringReassemblyTest" start="103" end="119" startBytecode="0" endBytecode="29" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Method>
+    <LocalVariable name="input" register="1" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="StringReassemblyTest" start="103" end="103" startBytecode="9" endBytecode="9" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <SourceLine classname="StringReassemblyTest" start="103" end="103" startBytecode="9" endBytecode="9" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="input"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="41">
+    <Class classname="StringReassemblyTest">
+      <SourceLine classname="StringReassemblyTest" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Class>
+    <Method classname="StringReassemblyTest" name="avoidingSubStrTest2" signature="()V" isStatic="false">
+      <SourceLine classname="StringReassemblyTest" start="103" end="119" startBytecode="0" endBytecode="29" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Method>
+    <LocalVariable name="out" register="2" pc="18" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="StringReassemblyTest" start="104" end="104" startBytecode="17" endBytecode="17" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <SourceLine classname="StringReassemblyTest" start="104" end="104" startBytecode="17" endBytecode="17" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="out"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="41" last="48" removedByChange="true">
+    <Class classname="StringReassemblyTest">
+      <SourceLine classname="StringReassemblyTest" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Class>
+    <Method classname="StringReassemblyTest" name="avoidingSubStrTest3" signature="()V" isStatic="false">
+      <SourceLine classname="StringReassemblyTest" start="122" end="138" startBytecode="0" endBytecode="29" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Method>
+    <LocalVariable name="input" register="1" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="StringReassemblyTest" start="122" end="122" startBytecode="9" endBytecode="9" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <SourceLine classname="StringReassemblyTest" start="122" end="122" startBytecode="9" endBytecode="9" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="input"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="41" last="48" removedByChange="true">
+    <Class classname="StringReassemblyTest">
+      <SourceLine classname="StringReassemblyTest" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Class>
+    <Method classname="StringReassemblyTest" name="avoidingSubStrTest3" signature="()V" isStatic="false">
+      <SourceLine classname="StringReassemblyTest" start="122" end="138" startBytecode="0" endBytecode="29" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Method>
+    <LocalVariable name="out" register="2" pc="18" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="StringReassemblyTest" start="123" end="123" startBytecode="17" endBytecode="17" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <SourceLine classname="StringReassemblyTest" start="123" end="123" startBytecode="17" endBytecode="17" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="out"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="45">
+    <Class classname="StringReassemblyTest">
+      <SourceLine classname="StringReassemblyTest" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Class>
+    <Method classname="StringReassemblyTest" name="testLinesfromInput" signature="()V" isStatic="false">
+      <SourceLine classname="StringReassemblyTest" start="47" end="68" startBytecode="0" endBytecode="50" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Method>
+    <LocalVariable name="out" register="2" pc="18" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="StringReassemblyTest" start="48" end="48" startBytecode="17" endBytecode="17" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <SourceLine classname="StringReassemblyTest" start="48" end="48" startBytecode="17" endBytecode="17" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="out"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="37">
+    <Class classname="StringReassemblyTest">
+      <SourceLine classname="StringReassemblyTest" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Class>
+    <Method classname="StringReassemblyTest" name="testLinesfromInput" signature="()V" isStatic="false">
+      <SourceLine classname="StringReassemblyTest" start="47" end="68" startBytecode="0" endBytecode="50" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    </Method>
+    <LocalVariable name="resData" register="4" pc="35" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="StringReassemblyTest" start="51" end="51" startBytecode="33" endBytecode="33" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <SourceLine classname="StringReassemblyTest" start="51" end="51" startBytecode="33" endBytecode="33" sourcefile="StringReassemblyTest.java" sourcepath="StringReassemblyTest.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="resData"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="25" last="28" removedByChange="true">
+    <Class classname="test">
+      <SourceLine classname="test" sourcefile="test.java" sourcepath="test.java"/>
+    </Class>
+    <Method classname="test" name="testLinesfromInput" signature="()V" isStatic="false">
+      <SourceLine classname="test" start="43" end="48" startBytecode="0" endBytecode="13" sourcefile="test.java" sourcepath="test.java"/>
+    </Method>
+    <LocalVariable name="expData" register="2" pc="18" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test" start="45" end="45" startBytecode="17" endBytecode="17" sourcefile="test.java" sourcepath="test.java"/>
+    <SourceLine classname="test" start="45" end="45" startBytecode="17" endBytecode="17" sourcefile="test.java" sourcepath="test.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="expData"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="25" last="28" removedByChange="true">
+    <Class classname="test">
+      <SourceLine classname="test" sourcefile="test.java" sourcepath="test.java"/>
+    </Class>
+    <Method classname="test" name="testLinesfromInput" signature="()V" isStatic="false">
+      <SourceLine classname="test" start="43" end="48" startBytecode="0" endBytecode="13" sourcefile="test.java" sourcepath="test.java"/>
+    </Method>
+    <LocalVariable name="input" register="1" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test" start="43" end="43" startBytecode="9" endBytecode="9" sourcefile="test.java" sourcepath="test.java"/>
+    <SourceLine classname="test" start="43" end="43" startBytecode="9" endBytecode="9" sourcefile="test.java" sourcepath="test.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="input"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="25">
+    <Class classname="test">
+      <SourceLine classname="test" sourcefile="test.java" sourcepath="test.java"/>
+    </Class>
+    <Method classname="test" name="testLinesfromInput" signature="()V" isStatic="false">
+      <SourceLine classname="test" start="46" end="70" startBytecode="0" endBytecode="63" sourcefile="test.java" sourcepath="test.java"/>
+    </Method>
+    <LocalVariable name="resData" register="4" pc="35" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="test" start="50" end="50" startBytecode="33" endBytecode="33" sourcefile="test.java" sourcepath="test.java"/>
+    <SourceLine classname="test" start="50" end="50" startBytecode="33" endBytecode="33" sourcefile="test.java" sourcepath="test.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="resData"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="20">
+    <Class classname="test">
+      <SourceLine classname="test" start="12" end="85" sourcefile="test.java" sourcepath="test.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 2 Dec 2019 23:20:59 -0500" total_classes="1" referenced_classes="23" total_bugs="8" total_size="136" num_packages="1" java_version="9.0.1" vm_version="9.0.1+11" cpu_seconds="1.31" clock_seconds="0.42" peak_mbytes="877.45" alloc_mbytes="1024.00" gc_seconds="0.01" priority_2="3" priority_1="5">
+    <PackageStats package="" total_bugs="8" total_types="3" total_size="136" priority_2="3" priority_1="5">
+      <ClassStats class="StringReassembly" sourceFile="StringReassembly.java" interface="false" size="136" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="140" invocations="2" avgMicrosecondsPerInvocation="70147" maxMicrosecondsPerInvocation="133192" standardDeviationMicrosecondsPerInvocation="63045"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="68" invocations="366" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="2720" standardDeviationMicrosecondsPerInvocation="344"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="47" invocations="367" avgMicrosecondsPerInvocation="129" maxMicrosecondsPerInvocation="918" standardDeviationMicrosecondsPerInvocation="84"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="21" invocations="10" avgMicrosecondsPerInvocation="2167" maxMicrosecondsPerInvocation="16586" standardDeviationMicrosecondsPerInvocation="4816"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="19" invocations="23" avgMicrosecondsPerInvocation="865" maxMicrosecondsPerInvocation="9417" standardDeviationMicrosecondsPerInvocation="1988"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="11" invocations="332" avgMicrosecondsPerInvocation="33" maxMicrosecondsPerInvocation="578" standardDeviationMicrosecondsPerInvocation="59"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1573522633028" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1573522633028" release="" codeSize="123" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1573523119867" release="" codeSize="123" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1573523212547" release="" codeSize="124" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1573523252048" release="" codeSize="126" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1573523474879" release="" codeSize="124" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1573523553757" release="" codeSize="124" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1573523566900" release="" codeSize="124" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1573524097471" release="" codeSize="123" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1573526261897" release="" codeSize="127" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1573526521712" release="" codeSize="128" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1573527227696" release="" codeSize="130" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1573527719916" release="" codeSize="130" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1573528275883" release="" codeSize="139" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1573528386247" release="" codeSize="139" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1573528539461" release="" codeSize="139" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1573528622355" release="" codeSize="137" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1573528669838" release="" codeSize="137" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1573528698884" release="" codeSize="137" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1573528717216" release="" codeSize="137" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1573602519489" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1573602524031" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1573603286895" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1573603311654" release="" codeSize="12" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1573603333151" release="" codeSize="12" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1573603566566" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1573603579227" release="" codeSize="17" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1573610676575" release="" codeSize="20" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1573610822784" release="" codeSize="28" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1573611034818" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1573611044819" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1573611063281" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="32" timestamp="1573611068180" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="33" timestamp="1573611084674" release="" codeSize="39" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1573611382309" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1573611394608" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1573612105291" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1573612161064" release="" codeSize="44" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1573613027761" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1573613224372" release="" codeSize="11" numClasses="1"/>
+    <AppVersion sequence="40" timestamp="1573613235424" release="" codeSize="53" numClasses="1"/>
+    <AppVersion sequence="41" timestamp="1573613325629" release="" codeSize="75" numClasses="1"/>
+    <AppVersion sequence="42" timestamp="1573613400303" release="" codeSize="137" numClasses="1"/>
+    <AppVersion sequence="43" timestamp="1573613431457" release="" codeSize="137" numClasses="1"/>
+    <AppVersion sequence="44" timestamp="1573613505275" release="" codeSize="75" numClasses="1"/>
+    <AppVersion sequence="45" timestamp="1573614463941" release="" codeSize="206" numClasses="2"/>
+    <AppVersion sequence="46" timestamp="1573614700459" release="" codeSize="74" numClasses="1"/>
+    <AppVersion sequence="47" timestamp="1573614793705" release="" codeSize="136" numClasses="1"/>
+    <AppVersion sequence="48" timestamp="1573614829662" release="" codeSize="136" numClasses="1"/>
+    <AppVersion sequence="49" timestamp="1573623053846" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="50" timestamp="1573623081227" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="51" timestamp="1573623097885" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="52" timestamp="1573623111947" release="" codeSize="63" numClasses="1"/>
+    <AppVersion sequence="53" timestamp="1575346544256" release="" codeSize="136" numClasses="1"/>
+    <AppVersion sequence="54" timestamp="1575346557646" release="" codeSize="136" numClasses="1"/>
+    <AppVersion sequence="55" timestamp="1575346713522" release="" codeSize="136" numClasses="1"/>
+  </History>
+</BugCollection>

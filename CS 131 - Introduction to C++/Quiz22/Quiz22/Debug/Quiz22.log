@@ -1,0 +1,4 @@
+﻿  Quiz22.cpp
+c:\users\osatio\desktop\study!\cs 131\quiz22\quiz22\quiz22.cpp(57): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Quiz22.vcxproj -> C:\Users\osatio\Desktop\Study!\CS 131\Quiz22\Debug\Quiz22.exe
+  Quiz22.vcxproj -> C:\Users\osatio\Desktop\Study!\CS 131\Quiz22\Debug\Quiz22.pdb (Partial PDB)

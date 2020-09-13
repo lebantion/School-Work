@@ -1,0 +1,187 @@
+import java.util.Comparator;
+
+import components.map.Map;
+import components.map.Map1L;
+import components.queue.Queue;
+import components.queue.Queue1L;
+import components.set.Set;
+import components.set.Set1L;
+import components.simplereader.SimpleReader;
+import components.simplereader.SimpleReader1L;
+import components.simplewriter.SimpleWriter;
+import components.simplewriter.SimpleWriter1L;
+
+/**
+ * Put a short phrase describing the program here.
+ *
+ * @author Put your name here
+ *
+ */
+public final class Dictonary {
+
+    private static class StringCpr implements Comparator<String> {
+        @Override
+        public int compare(String x, String y) {
+            return x.compareTo(y);
+        }
+    }
+
+    private static void generateMap(SimpleReader input,
+            Map<String, Set<String>> termMap, Queue<String> nameSet) {
+        while (!input.atEOS()) {
+            String termName = input.nextLine();
+
+            nameSet.enqueue(termName);
+
+            String def = input.nextLine();
+
+            Set<String> termSet = new Set1L<String>();
+
+            while (def.compareTo("") != 0) {
+                termSet.add(def);
+                def = input.nextLine();
+            }
+
+            termMap.add(termName, termSet);
+        }
+
+        Comparator<String> compareStr = new StringCpr();
+
+        nameSet.sort(compareStr);
+    }
+
+    public static void makeHead(String title, SimpleWriter output) {
+        output.println("   <head>");
+        output.println("       <title>" + title + "</title>");
+        output.println("   </head>");
+    }
+
+    private static void subPageHtml(Map<String, Set<String>> termMap,
+            Queue<String> termName) {
+
+        for (int i = 0; i < termMap.size(); i++) {
+            String termKey = termName.dequeue();
+
+            SimpleWriter out = new SimpleWriter1L(termKey + ".html");
+
+            out.println("<html>");
+            out.println("   <head>");
+            out.println("       <title>" + termKey + "</title>");
+            out.println("   </head>");
+            out.println("   <body>");
+            out.println("       <h2>");
+            out.println("           <b>");
+            out.println("               <i>");
+            out.println("                   <font color=\"red\">" + termKey
+                    + "</font>");
+            out.println("               </i>");
+            out.println("           </b>");
+            out.println("       </h2>");
+
+            String def = "";
+            for (String x : termMap.value(termKey)) {
+                def += x;
+            }
+
+            def = lineChecker(def, termName);
+
+            out.println("       <blockquote>" + def + "</blockquote>");
+
+            out.println("       <hr>");
+            out.println(
+                    "       <p>\"Return To\"<a href=\"index.html\">index</a>\".\"");
+            out.println("       </p>");
+            out.println("   </body>");
+            out.println("</html>");
+
+            termName.enqueue(termKey);
+        }
+    }
+
+    public static void inputSubPage(SimpleReader input, SimpleWriter output) {
+        Map<String, Set<String>> subPageMap = new Map1L<String, Set<String>>();
+        Queue<String> termNameSet = new Queue1L<String>();
+
+        generateMap(input, subPageMap, termNameSet);
+
+        subPageHtml(subPageMap, termNameSet);
+
+        for (int i = 0; i < subPageMap.size(); i++) {
+            String termKey = termNameSet.dequeue();
+            output.println("            <li>");
+            output.println("                <a href=\"" + termKey + ".html\">"
+                    + termKey + "</a>");
+            output.println("            </li>");
+        }
+
+    }
+
+    public static void makeBody(String title, SimpleWriter output,
+            String outputFile, SimpleReader input) {
+
+        output.println("    <body>");
+        output.println("        <h2>" + title + "</h2>");
+        output.println("        <hr>");
+        output.println("        <h3>" + outputFile + "</h3>");
+        output.println("        <ul>");
+        inputSubPage(input, output);
+        output.println("        </ul>");
+        output.println("    </body>");
+
+    }
+
+    private static String lineChecker(String def, Queue<String> termName) {
+        int size = termName.length();
+        String result = def;
+
+        for (int i = 0; i < size; i++) {
+            String temp = termName.dequeue();
+            if (result.contains(temp)) {
+                result = result.replaceAll(temp,
+                        "<a href=\"" + temp + ".html\">" + temp + "</a>");
+            }
+            termName.enqueue(temp);
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        SimpleReader in = new SimpleReader1L();
+        SimpleWriter out = new SimpleWriter1L();
+
+        out.print("What is input file? : ");
+        String inputFile = in.nextLine();
+
+        if (!inputFile.endsWith(".txt")) {
+            inputFile += ".txt";
+        }
+
+        SimpleReader input = new SimpleReader1L(inputFile);
+
+        out.print("What is output folder? : ");
+        String outputFolder = in.nextLine();
+
+        if (!outputFolder.endsWith("/")) {
+            outputFolder += "/";
+        }
+
+        String outputFile = "index";
+
+        SimpleWriter htmlOutput = new SimpleWriter1L(outputFile + ".html");
+
+        out.print("what will be the title of your html? : ");
+        String title = in.nextLine();
+
+        htmlOutput.println("<html>");
+
+        makeHead(title, htmlOutput);
+        makeBody(title, htmlOutput, outputFile, input);
+
+        htmlOutput.println("</html>");
+
+        in.close();
+        out.close();
+    }
+
+}

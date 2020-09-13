@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="32" timestamp="1571192680431" analysisTimestamp="1571192660595" release="">
+  <Project projectName="RSSReader">
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\RSSReader\bin\RSSReader.class</Jar>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\RSSReader\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-9.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\RSSReader\test</SrcDir>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\RSSReader\src</SrcDir>
+  </Project>
+  <BugInstance type="EC_UNRELATED_CLASS_AND_INTERFACE" priority="1" rank="4" abbrev="EC" category="CORRECTNESS" first="1" last="4" removedByChange="true">
+    <Class classname="RSSReader">
+      <SourceLine classname="RSSReader" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Class>
+    <Method classname="RSSReader" name="processItem" signature="(Lcomponents/xmltree/XMLTree;Lcomponents/simplewriter/SimpleWriter;)V" isStatic="true">
+      <SourceLine classname="RSSReader" start="150" end="169" startBytecode="0" endBytecode="122" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="123" end="3119" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <Type descriptor="Lcomponents/xmltree/XMLTree;" role="TYPE_EXPECTED">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Type>
+    <String value="Date" role="STRING_CONSTANT"/>
+    <Method classname="components.xmltree.XMLTree" name="child" signature="(I)Lcomponents/xmltree/XMLTree;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Method>
+    <Method classname="java.lang.Object" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Object" start="158" end="158" startBytecode="0" endBytecode="73" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Method>
+    <Method classname="components.xmltree.XMLTreeSecondary" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="components.xmltree.XMLTreeSecondary"/>
+    </Method>
+    <SourceLine classname="RSSReader" start="159" end="159" startBytecode="126" endBytecode="126" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    <SourceLine classname="RSSReader" start="159" end="159" startBytecode="126" endBytecode="126" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_CLASS_AND_INTERFACE" priority="1" rank="4" abbrev="EC" category="CORRECTNESS" first="1" last="4" removedByChange="true">
+    <Class classname="RSSReader">
+      <SourceLine classname="RSSReader" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Class>
+    <Method classname="RSSReader" name="processItem" signature="(Lcomponents/xmltree/XMLTree;Lcomponents/simplewriter/SimpleWriter;)V" isStatic="true">
+      <SourceLine classname="RSSReader" start="150" end="169" startBytecode="0" endBytecode="122" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="123" end="3119" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <Type descriptor="Lcomponents/xmltree/XMLTree;" role="TYPE_EXPECTED">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Type>
+    <String value="News" role="STRING_CONSTANT"/>
+    <Method classname="components.xmltree.XMLTree" name="child" signature="(I)Lcomponents/xmltree/XMLTree;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Method>
+    <Method classname="java.lang.Object" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Object" start="158" end="158" startBytecode="0" endBytecode="73" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Method>
+    <Method classname="components.xmltree.XMLTreeSecondary" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="components.xmltree.XMLTreeSecondary"/>
+    </Method>
+    <SourceLine classname="RSSReader" start="163" end="163" startBytecode="240" endBytecode="240" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    <SourceLine classname="RSSReader" start="163" end="163" startBytecode="240" endBytecode="240" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_CLASS_AND_INTERFACE" priority="1" rank="4" abbrev="EC" category="CORRECTNESS" first="1" last="4" removedByChange="true">
+    <Class classname="RSSReader">
+      <SourceLine classname="RSSReader" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Class>
+    <Method classname="RSSReader" name="processItem" signature="(Lcomponents/xmltree/XMLTree;Lcomponents/simplewriter/SimpleWriter;)V" isStatic="true">
+      <SourceLine classname="RSSReader" start="150" end="169" startBytecode="0" endBytecode="122" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="123" end="3119" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <Type descriptor="Lcomponents/xmltree/XMLTree;" role="TYPE_EXPECTED">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Type>
+    <String value="Source" role="STRING_CONSTANT"/>
+    <Method classname="components.xmltree.XMLTree" name="child" signature="(I)Lcomponents/xmltree/XMLTree;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Method>
+    <Method classname="java.lang.Object" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Object" start="158" end="158" startBytecode="0" endBytecode="73" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Method>
+    <Method classname="components.xmltree.XMLTreeSecondary" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="components.xmltree.XMLTreeSecondary"/>
+    </Method>
+    <SourceLine classname="RSSReader" start="161" end="161" startBytecode="183" endBytecode="183" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    <SourceLine classname="RSSReader" start="161" end="161" startBytecode="183" endBytecode="183" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_CLASS_AND_INTERFACE" priority="1" rank="4" abbrev="EC" category="CORRECTNESS" first="5" last="6" removedByChange="true">
+    <Class classname="RSSReader">
+      <SourceLine classname="RSSReader" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Class>
+    <Method classname="RSSReader" name="processItem" signature="(Lcomponents/xmltree/XMLTree;Lcomponents/simplewriter/SimpleWriter;)V" isStatic="true">
+      <SourceLine classname="RSSReader" start="150" end="172" startBytecode="0" endBytecode="125" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="123" end="3119" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <Type descriptor="Lcomponents/xmltree/XMLTree;" role="TYPE_EXPECTED">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Type>
+    <String value="date" role="STRING_CONSTANT"/>
+    <Method classname="components.xmltree.XMLTree" name="child" signature="(I)Lcomponents/xmltree/XMLTree;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Method>
+    <Method classname="java.lang.Object" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Object" start="158" end="158" startBytecode="0" endBytecode="73" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Method>
+    <Method classname="components.xmltree.XMLTreeSecondary" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="components.xmltree.XMLTreeSecondary"/>
+    </Method>
+    <SourceLine classname="RSSReader" start="159" end="159" startBytecode="126" endBytecode="126" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    <SourceLine classname="RSSReader" start="159" end="159" startBytecode="126" endBytecode="126" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_CLASS_AND_INTERFACE" priority="1" rank="4" abbrev="EC" category="CORRECTNESS" first="5" last="6" removedByChange="true">
+    <Class classname="RSSReader">
+      <SourceLine classname="RSSReader" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Class>
+    <Method classname="RSSReader" name="processItem" signature="(Lcomponents/xmltree/XMLTree;Lcomponents/simplewriter/SimpleWriter;)V" isStatic="true">
+      <SourceLine classname="RSSReader" start="150" end="172" startBytecode="0" endBytecode="125" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="123" end="3119" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <Type descriptor="Lcomponents/xmltree/XMLTree;" role="TYPE_EXPECTED">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Type>
+    <String value="news" role="STRING_CONSTANT"/>
+    <Method classname="components.xmltree.XMLTree" name="child" signature="(I)Lcomponents/xmltree/XMLTree;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Method>
+    <Method classname="java.lang.Object" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Object" start="158" end="158" startBytecode="0" endBytecode="73" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Method>
+    <Method classname="components.xmltree.XMLTreeSecondary" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="components.xmltree.XMLTreeSecondary"/>
+    </Method>
+    <SourceLine classname="RSSReader" start="165" end="165" startBytecode="250" endBytecode="250" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    <SourceLine classname="RSSReader" start="165" end="165" startBytecode="250" endBytecode="250" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+  </BugInstance>
+  <BugInstance type="EC_UNRELATED_CLASS_AND_INTERFACE" priority="1" rank="4" abbrev="EC" category="CORRECTNESS" first="5" last="6" removedByChange="true">
+    <Class classname="RSSReader">
+      <SourceLine classname="RSSReader" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Class>
+    <Method classname="RSSReader" name="processItem" signature="(Lcomponents/xmltree/XMLTree;Lcomponents/simplewriter/SimpleWriter;)V" isStatic="true">
+      <SourceLine classname="RSSReader" start="150" end="172" startBytecode="0" endBytecode="125" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="123" end="3119" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <Type descriptor="Lcomponents/xmltree/XMLTree;" role="TYPE_EXPECTED">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Type>
+    <String value="source" role="STRING_CONSTANT"/>
+    <Method classname="components.xmltree.XMLTree" name="child" signature="(I)Lcomponents/xmltree/XMLTree;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="components.xmltree.XMLTree"/>
+    </Method>
+    <Method classname="java.lang.Object" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="java.lang.Object" start="158" end="158" startBytecode="0" endBytecode="73" sourcefile="Object.java" sourcepath="java/lang/Object.java"/>
+    </Method>
+    <Method classname="components.xmltree.XMLTreeSecondary" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false" role="METHOD_EQUALS_USED">
+      <SourceLine classname="components.xmltree.XMLTreeSecondary"/>
+    </Method>
+    <SourceLine classname="RSSReader" start="162" end="162" startBytecode="188" endBytecode="188" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+    <SourceLine classname="RSSReader" start="162" end="162" startBytecode="188" endBytecode="188" sourcefile="RSSReader.java" sourcepath="RSSReader.java"/>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" rank="20" abbrev="FS" category="BAD_PRACTICE" first="28">
+    <Class classname="RSSReader2">
+      <SourceLine classname="RSSReader2" sourcefile="RSSReader2.java" sourcepath="RSSReader2.java"/>
+    </Class>
+    <Method classname="RSSReader2" name="outputHeader" signature="(Lcomponents/xmltree/XMLTree;Lcomponents/simplewriter/SimpleWriter;)V" isStatic="true">
+      <SourceLine classname="RSSReader2" start="35" end="75" startBytecode="0" endBytecode="575" sourcefile="RSSReader2.java" sourcepath="RSSReader2.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="2747" end="2747" startBytecode="0" endBytecode="67" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <String value="&lt;title&gt;\n %s\n&lt;/title&gt;" role="STRING_FORMAT_STRING"/>
+    <SourceLine classname="RSSReader2" start="49" end="49" startBytecode="157" endBytecode="157" sourcefile="RSSReader2.java" sourcepath="RSSReader2.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 15 Oct 2019 22:24:16 -0400" total_classes="1" referenced_classes="19" total_bugs="1" total_size="124" num_packages="1" java_version="9.0.1" vm_version="9.0.1+11" cpu_seconds="25.31" clock_seconds="20.32" peak_mbytes="613.44" alloc_mbytes="1024.00" gc_seconds="0.77" priority_2="1">
+    <PackageStats package="" total_bugs="1" total_types="2" total_size="124" priority_2="1">
+      <ClassStats class="RSSReader" sourceFile="RSSReader.java" interface="false" size="124" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="15225" invocations="2" avgMicrosecondsPerInvocation="7612694" maxMicrosecondsPerInvocation="14841964" standardDeviationMicrosecondsPerInvocation="7229270"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1569379532379" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1569379532380" release="" codeSize="102" numClasses="4"/>
+    <AppVersion sequence="2" timestamp="1569379746037" release="" codeSize="68" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1569379841853" release="" codeSize="70" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1569380126142" release="" codeSize="73" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1569380144454" release="" codeSize="73" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1569380176842" release="" codeSize="76" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1569380376390" release="" codeSize="76" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1569380429140" release="" codeSize="76" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1569380445120" release="" codeSize="74" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1569380633535" release="" codeSize="76" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1569380937233" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1569380948553" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1569380988426" release="" codeSize="76" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1569381285665" release="" codeSize="77" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1569381319156" release="" codeSize="77" numClasses="1"/>
+    <AppVersion sequence="16" timestamp="1569381656994" release="" codeSize="77" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1569381804077" release="" codeSize="82" numClasses="1"/>
+    <AppVersion sequence="18" timestamp="1569381879382" release="" codeSize="82" numClasses="1"/>
+    <AppVersion sequence="19" timestamp="1569382035698" release="" codeSize="83" numClasses="1"/>
+    <AppVersion sequence="20" timestamp="1569382459985" release="" codeSize="87" numClasses="1"/>
+    <AppVersion sequence="21" timestamp="1569382933223" release="" codeSize="93" numClasses="1"/>
+    <AppVersion sequence="22" timestamp="1569385299852" release="" codeSize="121" numClasses="1"/>
+    <AppVersion sequence="23" timestamp="1569385469075" release="" codeSize="121" numClasses="1"/>
+    <AppVersion sequence="24" timestamp="1569385578634" release="" codeSize="121" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1569385624365" release="" codeSize="121" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1569385869956" release="" codeSize="121" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1569386352856" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1569386365021" release="" codeSize="120" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1569386430220" release="" codeSize="120" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1570150606780" release="" codeSize="124" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1571153167755" release="" codeSize="124" numClasses="1"/>
+  </History>
+</BugCollection>

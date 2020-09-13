@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;RSSAggregator.java&apos; to &apos;NaturalNumberRoot.java&apos;&#x0D;&#x0A;- Original project: &apos;test&apos;&#x0D;&#x0A;- Original element: &apos;RSSAggregator.java&apos;&#x0D;&#x0A;- Renamed element: &apos;NaturalNumberRoot.java&apos;" description="Rename compilation unit &apos;RSSAggregator.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{RSSAggregator.java" name="NaturalNumberRoot.java" references="false" stamp="1571196245718" version="1.0"/>
+</session>

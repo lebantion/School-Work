@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="3" timestamp="1571800095010" analysisTimestamp="1571800094527" release="">
+  <Project projectName="XMLTreeExpressionEvaluatorJC">
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\XMLTreeExpressionEvaluatorJC\bin\XMLTreeIntExpressionEvaluator.class</Jar>
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\XMLTreeExpressionEvaluatorJC\bin\XMLTreeNNExpressionEvaluator.class</Jar>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\XMLTreeExpressionEvaluatorJC\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-9.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\XMLTreeExpressionEvaluatorJC\test</SrcDir>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\XMLTreeExpressionEvaluatorJC\src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 22 Oct 2019 23:08:14 -0400" total_classes="2" referenced_classes="23" total_bugs="0" total_size="123" num_packages="1" java_version="9.0.1" vm_version="9.0.1+11" cpu_seconds="1.36" clock_seconds="0.48" peak_mbytes="895.77" alloc_mbytes="1024.00" gc_seconds="0.03">
+    <PackageStats package="" total_bugs="0" total_types="2" total_size="123">
+      <ClassStats class="XMLTreeIntExpressionEvaluator" sourceFile="XMLTreeIntExpressionEvaluator.java" interface="false" size="54" bugs="0"/>
+      <ClassStats class="XMLTreeNNExpressionEvaluator" sourceFile="XMLTreeNNExpressionEvaluator.java" interface="false" size="69" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="235" invocations="2" avgMicrosecondsPerInvocation="117699" maxMicrosecondsPerInvocation="230764" standardDeviationMicrosecondsPerInvocation="113064"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="82" invocations="382" avgMicrosecondsPerInvocation="216" maxMicrosecondsPerInvocation="18787" standardDeviationMicrosecondsPerInvocation="1013"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="65" invocations="383" avgMicrosecondsPerInvocation="171" maxMicrosecondsPerInvocation="25112" standardDeviationMicrosecondsPerInvocation="1277"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1571795769428" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1571795769428" release="" codeSize="84" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1571795787691" release="" codeSize="116" numClasses="1"/>
+  </History>
+</BugCollection>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="56" timestamp="1575348001633" analysisTimestamp="1575348001083" release="">
+  <Project projectName="Dictionary">
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\Dictionary\bin\DictionaryProject$StringCpr.class</Jar>
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\Dictionary\bin\DictionaryProject.class</Jar>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\Dictionary\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-9.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\Dictionary\src</SrcDir>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\Dictionary\test</SrcDir>
+  </Project>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="31">
+    <Class classname="DictionaryProject">
+      <SourceLine classname="DictionaryProject" sourcefile="DictionaryProject.java" sourcepath="DictionaryProject.java"/>
+    </Class>
+    <Method classname="DictionaryProject" name="generateMap" signature="(Lcomponents/simplereader/SimpleReader;Lcomponents/map/Map;Lcomponents/queue/Queue;)V" isStatic="true">
+      <SourceLine classname="DictionaryProject" start="45" end="67" startBytecode="0" endBytecode="359" sourcefile="DictionaryProject.java" sourcepath="DictionaryProject.java"/>
+    </Method>
+    <SourceLine classname="DictionaryProject" start="55" end="55" startBytecode="32" endBytecode="32" sourcefile="DictionaryProject.java" sourcepath="DictionaryProject.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="23" last="30" removedByChange="true">
+    <Class classname="DictionaryProject">
+      <SourceLine classname="DictionaryProject" sourcefile="DictionaryProject.java" sourcepath="DictionaryProject.java"/>
+    </Class>
+    <Method classname="DictionaryProject" name="subPageHtml" signature="(Lcomponents/map/Map;Lcomponents/queue/Queue;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="DictionaryProject" start="96" end="137" startBytecode="0" endBytecode="716" sourcefile="DictionaryProject.java" sourcepath="DictionaryProject.java"/>
+    </Method>
+    <SourceLine classname="DictionaryProject" start="118" end="118" startBytecode="234" endBytecode="234" sourcefile="DictionaryProject.java" sourcepath="DictionaryProject.java"/>
+  </BugInstance>
+  <BugInstance type="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE" priority="2" rank="19" abbrev="Se" category="BAD_PRACTICE" first="23">
+    <Class classname="DictionaryProject$StringCpr">
+      <SourceLine classname="DictionaryProject$StringCpr" start="1" end="28" sourcefile="DictionaryProject.java" sourcepath="DictionaryProject.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="42">
+    <Class classname="DictionaryProjectTest">
+      <SourceLine classname="DictionaryProjectTest" sourcefile="DictionaryProjectTest.java" sourcepath="DictionaryProjectTest.java"/>
+    </Class>
+    <Method classname="DictionaryProjectTest" name="MakeHeadTest" signature="()V" isStatic="false">
+      <SourceLine classname="DictionaryProjectTest" start="64" end="87" startBytecode="0" endBytecode="311" sourcefile="DictionaryProjectTest.java" sourcepath="DictionaryProjectTest.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="24" last="26" removedByChange="true">
+    <Class classname="DictionaryTest">
+      <SourceLine classname="DictionaryTest" sourcefile="DictionaryTest.java" sourcepath="DictionaryTest.java"/>
+    </Class>
+    <Method classname="DictionaryTest" name="MakeBodyTest" signature="()V" isStatic="false">
+      <SourceLine classname="DictionaryTest" start="14" end="34" startBytecode="0" endBytecode="316" sourcefile="DictionaryTest.java" sourcepath="DictionaryTest.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="24" last="42" removedByChange="true">
+    <Class classname="DictionaryTest">
+      <SourceLine classname="DictionaryTest" sourcefile="DictionaryTest.java" sourcepath="DictionaryTest.java"/>
+    </Class>
+    <Method classname="DictionaryTest" name="MakeHeadTest" signature="()V" isStatic="false">
+      <SourceLine classname="DictionaryTest" start="63" end="63" startBytecode="0" endBytecode="42" sourcefile="DictionaryTest.java" sourcepath="DictionaryTest.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="45">
+    <Class classname="DictionaryTestCase">
+      <SourceLine classname="DictionaryTestCase" sourcefile="DictionaryTestCase.java" sourcepath="DictionaryTestCase.java"/>
+    </Class>
+    <Method classname="DictionaryTestCase" name="MakeHeadTest" signature="()V" isStatic="false">
+      <SourceLine classname="DictionaryTestCase" start="64" end="87" startBytecode="0" endBytecode="311" sourcefile="DictionaryTestCase.java" sourcepath="DictionaryTestCase.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="37">
+    <Class classname="DictionaryTestTemp">
+      <SourceLine classname="DictionaryTestTemp" sourcefile="DictionaryTestTemp.java" sourcepath="DictionaryTestTemp.java"/>
+    </Class>
+    <Method classname="DictionaryTestTemp" name="MakeHeadTest" signature="()V" isStatic="false">
+      <SourceLine classname="DictionaryTestTemp" start="64" end="87" startBytecode="0" endBytecode="311" sourcefile="DictionaryTestTemp.java" sourcepath="DictionaryTestTemp.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1" last="11" removedByChange="true">
+    <Class classname="Dictonary">
+      <SourceLine classname="Dictonary" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Class>
+    <Method classname="Dictonary" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Dictonary" start="150" end="185" startBytecode="0" endBytecode="89" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Method>
+    <LocalVariable name="outputFolder" register="5" pc="124" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="Dictonary" start="166" end="166" startBytecode="122" endBytecode="122" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    <SourceLine classname="Dictonary" start="166" end="166" startBytecode="122" endBytecode="122" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="outputFolder"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="1" rank="3" abbrev="RV" category="CORRECTNESS" first="4" last="8" removedByChange="true">
+    <Class classname="Dictonary">
+      <SourceLine classname="Dictonary" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Class>
+    <Method classname="Dictonary" name="lineChecker" signature="(Ljava/lang/String;Lcomponents/queue/Queue;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="Dictonary" start="134" end="146" startBytecode="0" endBytecode="246" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="replace" signature="(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="2153" end="2173" startBytecode="0" endBytecode="417" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="Dictonary" start="140" end="140" startBytecode="61" endBytecode="61" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    <SourceLine classname="Dictonary" start="140" end="140" startBytecode="61" endBytecode="61" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="1" rank="3" abbrev="RV" category="CORRECTNESS" first="9" last="9" removedByChange="true">
+    <Class classname="Dictonary">
+      <SourceLine classname="Dictonary" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Class>
+    <Method classname="Dictonary" name="lineChecker" signature="(Ljava/lang/String;Lcomponents/queue/Queue;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="Dictonary" start="134" end="146" startBytecode="0" endBytecode="267" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="replaceAll" signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="2137" end="2137" startBytecode="0" endBytecode="74" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="Dictonary" start="140" end="140" startBytecode="70" endBytecode="70" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    <SourceLine classname="Dictonary" start="140" end="140" startBytecode="70" endBytecode="70" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="3" last="11" removedByChange="true">
+    <Class classname="Dictonary">
+      <SourceLine classname="Dictonary" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Class>
+    <Method classname="Dictonary" name="subPageHtml" signature="(Lcomponents/map/Map;Lcomponents/queue/Queue;)V" isStatic="true">
+      <SourceLine classname="Dictonary" start="62" end="99" startBytecode="0" endBytecode="671" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Method>
+    <SourceLine classname="Dictonary" start="83" end="83" startBytecode="225" endBytecode="225" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="13">
+    <Class classname="Dictonary">
+      <SourceLine classname="Dictonary" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Class>
+    <Method classname="Dictonary" name="subPageHtml" signature="(Lcomponents/map/Map;Lcomponents/queue/Queue;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="Dictonary" start="96" end="137" startBytecode="0" endBytecode="716" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Method>
+    <SourceLine classname="Dictonary" start="118" end="118" startBytecode="234" endBytecode="234" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="12" last="12" removedByChange="true">
+    <Class classname="Dictonary">
+      <SourceLine classname="Dictonary" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Class>
+    <Method classname="Dictonary" name="subPageHtml" signature="(Lcomponents/map/Map;Ljava/lang/String;Lcomponents/queue/Queue;)V" isStatic="true">
+      <SourceLine classname="Dictonary" start="62" end="100" startBytecode="0" endBytecode="705" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Method>
+    <SourceLine classname="Dictonary" start="84" end="84" startBytecode="234" endBytecode="234" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+  </BugInstance>
+  <BugInstance type="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE" priority="2" rank="19" abbrev="Se" category="BAD_PRACTICE" first="1">
+    <Class classname="Dictonary$StringCpr">
+      <SourceLine classname="Dictonary$StringCpr" start="1" end="30" sourcefile="Dictonary.java" sourcepath="Dictonary.java"/>
+    </Class>
+    <SourceLine classname="Dictonary$StringCpr" start="27" end="27" startBytecode="0" endBytecode="0" sourcefile="StringCpr.java" sourcepath="StringCpr.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 2 Dec 2019 23:40:01 -0500" total_classes="2" referenced_classes="41" total_bugs="7" total_size="118" num_packages="1" java_version="9.0.1" vm_version="9.0.1+11" cpu_seconds="1.39" clock_seconds="0.55" peak_mbytes="892.54" alloc_mbytes="1024.00" gc_seconds="0.01" priority_2="7">
+    <PackageStats package="" total_bugs="7" total_types="7" total_size="118" priority_2="7">
+      <ClassStats class="DictionaryProject" sourceFile="DictionaryProject.java" interface="false" size="110" bugs="1" priority_2="1"/>
+      <ClassStats class="DictionaryProject$StringCpr" sourceFile="DictionaryProject.java" interface="false" size="8" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="235" invocations="2" avgMicrosecondsPerInvocation="117890" maxMicrosecondsPerInvocation="229265" standardDeviationMicrosecondsPerInvocation="111374"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="90" invocations="485" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="11819" standardDeviationMicrosecondsPerInvocation="607"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="59" invocations="487" avgMicrosecondsPerInvocation="122" maxMicrosecondsPerInvocation="3853" standardDeviationMicrosecondsPerInvocation="175"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="29" invocations="41" avgMicrosecondsPerInvocation="730" maxMicrosecondsPerInvocation="17620" standardDeviationMicrosecondsPerInvocation="2726"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1574048416593" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1574048416595" release="" codeSize="103" numClasses="2"/>
+    <AppVersion sequence="2" timestamp="1574048576775" release="" codeSize="103" numClasses="2"/>
+    <AppVersion sequence="3" timestamp="1574048710800" release="" codeSize="105" numClasses="2"/>
+    <AppVersion sequence="4" timestamp="1574050442868" release="" codeSize="113" numClasses="2"/>
+    <AppVersion sequence="5" timestamp="1574050502198" release="" codeSize="114" numClasses="2"/>
+    <AppVersion sequence="6" timestamp="1574050636448" release="" codeSize="114" numClasses="2"/>
+    <AppVersion sequence="7" timestamp="1574050711625" release="" codeSize="114" numClasses="2"/>
+    <AppVersion sequence="8" timestamp="1574050823121" release="" codeSize="113" numClasses="2"/>
+    <AppVersion sequence="9" timestamp="1574051036573" release="" codeSize="114" numClasses="2"/>
+    <AppVersion sequence="10" timestamp="1574051136381" release="" codeSize="114" numClasses="2"/>
+    <AppVersion sequence="11" timestamp="1574051361481" release="" codeSize="114" numClasses="2"/>
+    <AppVersion sequence="12" timestamp="1574051653260" release="" codeSize="84" numClasses="2"/>
+    <AppVersion sequence="13" timestamp="1574051700427" release="" codeSize="94" numClasses="2"/>
+    <AppVersion sequence="14" timestamp="1574051743707" release="" codeSize="116" numClasses="2"/>
+    <AppVersion sequence="15" timestamp="1574052117868" release="" codeSize="119" numClasses="2"/>
+    <AppVersion sequence="16" timestamp="1574218581222" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="17" timestamp="1574221154850" release="" codeSize="119" numClasses="2"/>
+    <AppVersion sequence="18" timestamp="1574221184094" release="" codeSize="119" numClasses="2"/>
+    <AppVersion sequence="19" timestamp="1574221336467" release="" codeSize="119" numClasses="2"/>
+    <AppVersion sequence="20" timestamp="1574221416774" release="" codeSize="119" numClasses="2"/>
+    <AppVersion sequence="21" timestamp="1574221524486" release="" codeSize="119" numClasses="2"/>
+    <AppVersion sequence="22" timestamp="1574221906287" release="" codeSize="119" numClasses="2"/>
+    <AppVersion sequence="23" timestamp="1574223305316" release="" codeSize="119" numClasses="2"/>
+    <AppVersion sequence="24" timestamp="1574223605097" release="" codeSize="19" numClasses="1"/>
+    <AppVersion sequence="25" timestamp="1574223617516" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="26" timestamp="1574223624088" release="" codeSize="19" numClasses="1"/>
+    <AppVersion sequence="27" timestamp="1574223629213" release="" codeSize="19" numClasses="1"/>
+    <AppVersion sequence="28" timestamp="1574224253405" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="29" timestamp="1574224409434" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="30" timestamp="1574224639804" release="" codeSize="23" numClasses="1"/>
+    <AppVersion sequence="31" timestamp="1574224955584" release="" codeSize="117" numClasses="2"/>
+    <AppVersion sequence="32" timestamp="1574225142777" release="" codeSize="117" numClasses="2"/>
+    <AppVersion sequence="33" timestamp="1574225621454" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="34" timestamp="1574225624635" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="35" timestamp="1574225635105" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="36" timestamp="1574225738589" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="37" timestamp="1574225746927" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="38" timestamp="1574225785693" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="39" timestamp="1574225797575" release="" codeSize="35" numClasses="1"/>
+    <AppVersion sequence="40" timestamp="1574226211319" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="41" timestamp="1574226616903" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="42" timestamp="1574226657237" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="43" timestamp="1574226776397" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="44" timestamp="1574226846595" release="" codeSize="6" numClasses="1"/>
+    <AppVersion sequence="45" timestamp="1574226876908" release="" codeSize="49" numClasses="1"/>
+    <AppVersion sequence="46" timestamp="1574227052470" release="" codeSize="117" numClasses="2"/>
+    <AppVersion sequence="47" timestamp="1574227059583" release="" codeSize="117" numClasses="2"/>
+    <AppVersion sequence="48" timestamp="1574227071052" release="" codeSize="117" numClasses="2"/>
+    <AppVersion sequence="49" timestamp="1574227076171" release="" codeSize="117" numClasses="2"/>
+    <AppVersion sequence="50" timestamp="1574227090536" release="" codeSize="117" numClasses="2"/>
+    <AppVersion sequence="51" timestamp="1574227111329" release="" codeSize="117" numClasses="2"/>
+    <AppVersion sequence="52" timestamp="1574231607693" release="" codeSize="117" numClasses="2"/>
+    <AppVersion sequence="53" timestamp="1575347799023" release="" codeSize="117" numClasses="2"/>
+    <AppVersion sequence="54" timestamp="1575347864053" release="" codeSize="117" numClasses="2"/>
+    <AppVersion sequence="55" timestamp="1575347972567" release="" codeSize="117" numClasses="2"/>
+  </History>
+</BugCollection>

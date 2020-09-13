@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="2" timestamp="1574397928718" analysisTimestamp="1574397928275" release="">
+  <Project projectName="DemoGUI3">
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\DemoGUI3\bin\AppendUndoModel.class</Jar>
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\DemoGUI3\bin\DemoController1.class</Jar>
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\DemoGUI3\bin\DemoGUI.class</Jar>
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\DemoGUI3\bin\DemoModel1.class</Jar>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\DemoGUI3\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-9.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\DemoGUI3\test</SrcDir>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\DemoGUI3\src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 21 Nov 2019 23:45:28 -0500" total_classes="4" referenced_classes="18" total_bugs="0" total_size="58" num_packages="1" java_version="9.0.1" vm_version="9.0.1+11" cpu_seconds="1.53" clock_seconds="0.45" peak_mbytes="598.48" alloc_mbytes="1024.00" gc_seconds="0.06">
+    <PackageStats package="" total_bugs="0" total_types="4" total_size="58">
+      <ClassStats class="AppendUndoModel" sourceFile="AppendUndoModel.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="DemoController1" sourceFile="DemoController1.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="DemoGUI" sourceFile="DemoGUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="DemoModel1" sourceFile="DemoModel1.java" interface="false" size="18" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="181" invocations="360" avgMicrosecondsPerInvocation="505" maxMicrosecondsPerInvocation="40061" standardDeviationMicrosecondsPerInvocation="2707"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="119" invocations="2" avgMicrosecondsPerInvocation="59772" maxMicrosecondsPerInvocation="113605" standardDeviationMicrosecondsPerInvocation="53833"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="47" invocations="361" avgMicrosecondsPerInvocation="131" maxMicrosecondsPerInvocation="2720" standardDeviationMicrosecondsPerInvocation="161"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1574397454126" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1574397454126" release="" codeSize="125" numClasses="7"/>
+  </History>
+</BugCollection>

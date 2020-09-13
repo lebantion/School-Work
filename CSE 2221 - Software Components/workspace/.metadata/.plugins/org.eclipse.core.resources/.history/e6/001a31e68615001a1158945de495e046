@@ -1,0 +1,263 @@
+import java.util.Comparator;
+
+import components.map.Map;
+import components.map.Map1L;
+import components.queue.Queue;
+import components.queue.Queue1L;
+import components.simplereader.SimpleReader;
+import components.simplereader.SimpleReader1L;
+import components.simplewriter.SimpleWriter;
+import components.simplewriter.SimpleWriter1L;
+
+/**
+ * Program that output about word and definition with HTML file.
+ *
+ * @author SeongRok Ha(ha.241)
+ *
+ */
+public final class DictionaryProject {
+
+    /**
+     * This is Comparator to use sort on Queue.
+     *
+     */
+
+    private static class StringCpr implements Comparator<String> {
+        @Override
+        public int compare(String x, String y) {
+            return x.compareTo(y);
+        }
+    }
+
+    /**
+     * This method generate the map from input file.
+     *
+     * @param input
+     *            Scanner to read file
+     * @param termMap
+     *            Map to input term and Definition
+     * @param nameSet
+     *            Queue to input key of Map
+     * @updates termMap, nameSet
+     */
+    private static void generateMap(SimpleReader input,
+            Map<String, String> termMap, Queue<String> nameSet) {
+        while (!input.atEOS()) {
+            String termName = input.nextLine();
+
+            nameSet.enqueue(termName);
+
+            String def = "";
+
+            String inputStr = input.nextLine();
+            
+            while (inputStr.compareTo("") != 0 && !input.atEOS()) {
+                def = def + inputStr;
+                inputStr = input.nextLine();
+            }
+
+            termMap.add(termName, def);
+        }
+
+        Comparator<String> compareStr = new StringCpr();
+
+        nameSet.sort(compareStr);
+    }
+
+    /**
+     * This method output header on HTML file.
+     *
+     * @param output
+     *            SimpleWriter to output on HTML file.
+     * @param title
+     *            title which is using for Head
+     */
+    public static void makeHead(String title, SimpleWriter output) {
+        output.println("   <head>");
+        output.println("       <title>" + title + "</title>");
+        output.println("   </head>");
+    }
+
+    /**
+     * This method make sub page HTML file to do hyperlink on terms.
+     *
+     * @param termMap
+     *            Map which contains term and definition.
+     * @param termName
+     *            Key set of Map to output value in the map.
+     * @param outputFolder
+     *            The folder where sub page HTML file generates.
+     */
+    private static void subPageHtml(Map<String, String> termMap,
+            Queue<String> termName, String outputFolder) {
+
+        for (int i = 0; i < termMap.size(); i++) {
+            String termKey = termName.dequeue();
+
+            SimpleWriter out = new SimpleWriter1L(
+                    outputFolder + termKey + ".html");
+
+            out.println("<html>");
+            out.println("   <head>");
+            out.println("       <title>" + termKey + "</title>");
+            out.println("   </head>");
+            out.println("   <body>");
+            out.println("       <h2>");
+            out.println("           <b>");
+            out.println("               <i>");
+            out.println("                   <font color=\"red\">" + termKey
+                    + "</font>");
+            out.println("               </i>");
+            out.println("           </b>");
+            out.println("       </h2>");
+
+            String def = termMap.value(termKey);
+
+            def = lineChecker(def, termName);
+
+            out.println("       <blockquote>" + def + "</blockquote>");
+
+            out.println("       <hr>");
+            out.println(
+                    "       <p>\"Return To\"<a href=\"index.html\">index</a>\".\"");
+            out.println("       </p>");
+            out.println("   </body>");
+            out.println("</html>");
+
+            termName.enqueue(termKey);
+
+            out.close();
+        }
+
+    }
+
+    /**
+     * This method input sub page in the main page.
+     *
+     * @param input
+     *            input File Reader.
+     * @param output
+     *            Writer to output on file.
+     * @param outputFolder
+     *            the folder where HTML file will generate
+     */
+    private static void inputSubPage(SimpleReader input, SimpleWriter output,
+            String outputFolder) {
+        Map<String, String> subPageMap = new Map1L<String, String>();
+        Queue<String> termNameSet = new Queue1L<String>();
+
+        generateMap(input, subPageMap, termNameSet);
+
+        subPageHtml(subPageMap, termNameSet, outputFolder);
+
+        for (int i = 0; i < subPageMap.size(); i++) {
+            String termKey = termNameSet.dequeue();
+            output.println("            <li>");
+            output.println("                <a href=\"" + termKey + ".html\">"
+                    + termKey + "</a>");
+            output.println("            </li>");
+        }
+
+    }
+
+    /**
+     * This method output Body of HTML on file.
+     *
+     * @param title
+     *            title for the page
+     * @param output
+     *            Writer to output on HTML file.
+     * @param outputFile
+     *            File name of the HTML ("index")
+     * @param input
+     *            Scanner from input File
+     * @param outputFolder
+     *            Folder where HTML file will generate.
+     */
+    public static void makeBody(String title, SimpleWriter output,
+            String outputFile, SimpleReader input, String outputFolder) {
+
+        output.println("    <body>");
+        output.println("        <h2>" + title + "</h2>");
+        output.println("        <hr>");
+        output.println("        <h3>" + outputFile + "</h3>");
+        output.println("        <ul>");
+        inputSubPage(input, output, outputFolder);
+        output.println("        </ul>");
+        output.println("    </body>");
+
+    }
+
+    /**
+     * This method check a String. and if there is a word which is in keySet
+     * hyperlink on the word.
+     *
+     * @param def
+     *            definition of term.
+     * @param termName
+     *            Queue of term.
+     *
+     * @return result Hyper-linked String
+     */
+    private static String lineChecker(String def, Queue<String> termName) {
+        int size = termName.length();
+        String result = def;
+
+        for (int i = 0; i < size; i++) {
+            String temp = termName.dequeue();
+            if (result.contains(temp)) {
+                result = result.replaceAll(temp,
+                        "<a href=\"" + temp + ".html\">" + temp + "</a>");
+            }
+            termName.enqueue(temp);
+        }
+
+        return result;
+    }
+
+    /**
+     * Main Method
+     *
+     */
+    public static void main(String[] args) {
+        SimpleReader in = new SimpleReader1L();
+        SimpleWriter out = new SimpleWriter1L();
+
+        out.print("What is input file? : ");
+        String inputFile = in.nextLine();
+
+        if (!inputFile.endsWith(".txt")) {
+            inputFile += ".txt";
+        }
+
+        SimpleReader input = new SimpleReader1L(inputFile);
+
+        out.print("What is output folder? : ");
+        String outputFolder = in.nextLine();
+
+        if (!outputFolder.endsWith("/")) {
+            outputFolder += "/";
+        }
+
+        String outputFile = "index";
+
+        SimpleWriter htmlOutput = new SimpleWriter1L(
+                outputFolder + outputFile + ".html");
+
+        out.print("what will be the title of your html? : ");
+        String title = in.nextLine();
+
+        htmlOutput.println("<html>");
+
+        makeHead(title, htmlOutput);
+        makeBody(title, htmlOutput, outputFile, input, outputFolder);
+
+        htmlOutput.println("</html>");
+
+        in.close();
+        out.close();
+        input.close();
+        htmlOutput.close();
+    }
+
+}

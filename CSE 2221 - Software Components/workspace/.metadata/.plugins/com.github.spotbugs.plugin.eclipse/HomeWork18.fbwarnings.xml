@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="8" timestamp="1573519860967" analysisTimestamp="1573519857112" release="">
+  <Project projectName="HomeWork18">
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\HomeWork18\bin\ProgramWithIOAndStaticMethod.class</Jar>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\HomeWork18\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-9.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\HomeWork18\src</SrcDir>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\HomeWork18\test</SrcDir>
+  </Project>
+  <BugInstance type="SE_COMPARATOR_SHOULD_BE_SERIALIZABLE" priority="2" rank="19" abbrev="Se" category="BAD_PRACTICE" first="3">
+    <Class classname="ComparatorSt">
+      <SourceLine classname="ComparatorSt" start="1" end="9" sourcefile="ComparatorSt.java" sourcepath="ComparatorSt.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="1" rank="15" abbrev="DLS" category="STYLE" first="6">
+    <Class classname="ProgramWithIOAndStaticMethod">
+      <SourceLine classname="ProgramWithIOAndStaticMethod" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    </Class>
+    <Method classname="ProgramWithIOAndStaticMethod" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="ProgramWithIOAndStaticMethod" start="68" end="83" startBytecode="0" endBytecode="32" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    </Method>
+    <LocalVariable name="in" register="1" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="ProgramWithIOAndStaticMethod" start="68" end="68" startBytecode="7" endBytecode="7" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    <SourceLine classname="ProgramWithIOAndStaticMethod" start="68" end="68" startBytecode="7" endBytecode="7" sourcefile="ProgramWithIOAndStaticMethod.java" sourcepath="ProgramWithIOAndStaticMethod.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="in"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Fri, 8 Nov 2019 07:12:02 -0500" total_classes="1" referenced_classes="19" total_bugs="2" total_size="39" num_packages="1" java_version="9.0.1" vm_version="9.0.1+11" cpu_seconds="6.98" clock_seconds="3.88" peak_mbytes="421.24" alloc_mbytes="1024.00" gc_seconds="0.10" priority_2="1" priority_1="1">
+    <PackageStats package="" total_bugs="2" total_types="2" total_size="39" priority_2="1" priority_1="1">
+      <ClassStats class="ProgramWithIOAndStaticMethod" sourceFile="ProgramWithIOAndStaticMethod.java" interface="false" size="39" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="2559" invocations="2" avgMicrosecondsPerInvocation="1279763" maxMicrosecondsPerInvocation="2414808" standardDeviationMicrosecondsPerInvocation="1135045"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="284" invocations="359" avgMicrosecondsPerInvocation="792" maxMicrosecondsPerInvocation="73384" standardDeviationMicrosecondsPerInvocation="5327"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1573183853692" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1573183853693" release="" codeSize="13" numClasses="1"/>
+    <AppVersion sequence="2" timestamp="1573184935737" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1573185014749" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1573185136613" release="" codeSize="34" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1573185183959" release="" codeSize="7" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1573185242418" release="" codeSize="32" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1573215124603" release="" codeSize="39" numClasses="1"/>
+  </History>
+</BugCollection>

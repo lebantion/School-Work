@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.0-beta1" sequence="1" timestamp="1570149576217" analysisTimestamp="1570149565065" release="">
+  <Project projectName="processFeed">
+    <Jar>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\processFeed\bin\RSSAggregator.class</Jar>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\processFeed\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.junit_4.12.0.v201504281640\junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\SeongRok\Desktop\Study!\CSE 2221\components.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk-9.0.1\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\processFeed\test</SrcDir>
+    <SrcDir>C:\Users\SeongRok\Desktop\Study!\CSE 2221\workspace\processFeed\src</SrcDir>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 3 Oct 2019 20:39:24 -0400" total_classes="1" referenced_classes="19" total_bugs="0" total_size="121" num_packages="1" java_version="9.0.1" vm_version="9.0.1+11" cpu_seconds="7.19" clock_seconds="11.18" peak_mbytes="710.31" alloc_mbytes="1024.00" gc_seconds="0.12">
+    <PackageStats package="" total_bugs="0" total_types="1" total_size="121">
+      <ClassStats class="RSSAggregator" sourceFile="RSSAggregator.java" interface="false" size="121" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="10198" invocations="2" avgMicrosecondsPerInvocation="5099221" maxMicrosecondsPerInvocation="10031393" standardDeviationMicrosecondsPerInvocation="4932172"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1570149576215" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>

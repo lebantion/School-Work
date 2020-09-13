@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="457"/>
+		<item key="DIALOG_Y_ORIGIN" value="102"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item key="dialogHeight" value="-1"/>
+		<item key="dialogWidth" value="-1"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item key="DIALOG_WIDTH" value="934"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_HEIGHT" value="982"/>
+		<item key="DIALOG_X_ORIGIN" value="-76"/>
+		<item key="DIALOG_Y_ORIGIN" value="-283"/>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
+			<item value="org.eclipse.ui.Other"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.ExternalProject"/>
+		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="FileSystemImportWizard">
+		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
+		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\SeongRok\Desktop\DemoGUI3\DemoGUI3"/>
+			<item value="C:\Users\SeongRok\Downloads"/>
+			<item value="C:\Users\SeongRok\Desktop\셀카"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
+		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\SeongRok\Desktop\Study!\CSE 2221\Homework - AppendUnDoGUI.zip"/>
+			<item value="C:\Users\SeongRok\Desktop\Study!\CSE 2221\ha.241 - Project10.zip"/>
+			<item value="C:\Users\SeongRok\Desktop\Study!\CSE 2221\ha.241 - Project9.zip"/>
+			<item value="C:\Users\SeongRok\Desktop\Study!\CSE 2221\ha.241 - Project8.zip"/>
+			<item value="C:\Users\SeongRok\Desktop\Study!\CSE 2221\ha.241 - Project7.zip"/>
+			<item value="C:\Users\SeongRok\Desktop\Study!\CSE 2221\ha.241 - Project6.zip"/>
+			<item value="C:\Users\SeongRok\Desktop\Study!\CSE 2221\숙제.zip"/>
+			<item value="C:\Users\SeongRok\Desktop\Study!\CSE 2221\ha.241 - Project4.zip"/>
+			<item value="C:\Users\SeongRok\Desktop\Study!\CSE 2221\Homework - Static Methods.zip"/>
+			<item value="C:\Users\SeongRok\Desktop\Study!\CSE 2221\Homepage.zip"/>
+			<item value="C:\Users\SeongRok\Desktop\HTML prac.zip"/>
+		</list>
+	</section>
+</section>

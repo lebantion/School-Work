@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;ProgramWithIOAndStaticMethod.java&apos; to &apos;StringReassembly.java&apos;&#x0D;&#x0A;- Original project: &apos;Homework13&apos;&#x0D;&#x0A;- Original element: &apos;ProgramWithIOAndStaticMethod.java&apos;&#x0D;&#x0A;- Renamed element: &apos;StringReassembly.java&apos;" description="Rename compilation unit &apos;ProgramWithIOAndStaticMethod.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{ProgramWithIOAndStaticMethod.java" name="StringReassembly.java" references="false" stamp="1575345880062" version="1.0"/>
+</session>

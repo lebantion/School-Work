@@ -1,0 +1,89 @@
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+import components.simplereader.SimpleReader;
+import components.simplereader.SimpleReader1L;
+import components.simplewriter.SimpleWriter;
+import components.simplewriter.SimpleWriter1L;
+
+public class DictionaryProjectTest {
+
+    @Test
+    public void makeBodyTest() {
+        SimpleReader input = new SimpleReader1L("Test1.txt");
+        SimpleReader input2 = new SimpleReader1L("Test1Expected.txt");
+        SimpleWriter output = new SimpleWriter1L("Test1Result.txt");
+
+        DictionaryProject.makeBody("test", output, "test", input, "");
+
+        boolean result = true;
+
+        SimpleReader inputResult = new SimpleReader1L("Test1Result.txt");
+
+        while (!input2.atEOS() && !inputResult.atEOS()) {
+            String expectedStr = input2.nextLine();
+            String resultStr = inputResult.nextLine();
+
+            if (expectedStr.compareTo(resultStr) != 0) {
+                result = false;
+            }
+        }
+
+        SimpleReader inputsubPage2 = new SimpleReader1L("TitleTest.html");
+
+        SimpleReader expectedsubPage = new SimpleReader1L(
+                "titletestExpected.html");
+
+        boolean result2 = true;
+
+        while (!inputsubPage2.atEOS() && !expectedsubPage.atEOS()) {
+            String expectedStr = expectedsubPage.nextLine();
+            String resultStr = inputsubPage2.nextLine();
+
+            if (expectedStr.compareTo(resultStr) != 0) {
+                result2 = false;
+            }
+        }
+
+        assertEquals(result, true);
+        assertEquals(result2, true);
+
+        input.close();
+        input2.close();
+        output.close();
+        inputResult.close();
+        inputsubPage2.close();
+        expectedsubPage.close();
+
+    }
+
+    @Test
+    public void MakeHeadTest() {
+
+        SimpleWriter output = new SimpleWriter1L("HeaderTestresult.txt");
+        SimpleReader inputExp = new SimpleReader1L("HeaderTest.txt");
+
+        DictionaryProject.makeHead("HeaderTest", output);
+
+        SimpleReader inputResult = new SimpleReader1L("HeaderTestresult.txt");
+
+        boolean result = true;
+
+        while (!inputExp.atEOS() && !inputResult.atEOS()) {
+            String expectedStr = inputExp.nextLine();
+            String resultStr = inputResult.nextLine();
+
+            if (expectedStr.compareTo(resultStr) != 0) {
+                result = false;
+            }
+        }
+
+        assertEquals(result, true);
+
+        output.close();
+        inputExp.close();
+        inputResult.close();
+    }
+
+}

@@ -1,0 +1,43 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import components.simplereader.SimpleReader;
+import components.simplereader.SimpleReader1L;
+import components.simplewriter.SimpleWriter;
+import components.simplewriter.SimpleWriter1L;
+
+public class DictionaryTest {
+
+    @Test
+    public void MakeBodyTest() 
+    {
+        SimpleReader input = new SimpleReader1L("Test1.txt");
+        SimpleReader input2 = new SimpleReader1L("Test1Expected.txt");
+        SimpleWriter output = new SimpleWriter1L("Test1Result.txt");
+        
+        DictionaryProject.makeBody("test", output, "test", input, "");
+        
+        boolean result = true;
+        
+        SimpleReader inputResult = new SimpleReader1L("Test1Result.txt");
+        
+        while(input2.atEOS() && inputResult.atEOS())
+        {
+            String ExpectedStr = input2.nextLine();
+            String ResultStr = inputResult.nextLine();
+            
+            if ( ExpectedStr.compareTo(ResultStr) != 0)
+            {
+                result = false;
+            }
+        }
+        
+        assertEquals(result, true);
+    }
+    
+    public void MakeHeadTest() {
+    
+    }
+
+}

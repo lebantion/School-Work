@@ -1,0 +1,8 @@
+This program processes a file of answers to the
+Keirsey Temperament Sorter.  It converts the
+various A and B answers for each person into
+a sequence of B-percentages and then into a
+four-letter personality type.
+
+input file name? personality.txt
+output file name? output.txt
