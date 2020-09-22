@@ -1,0 +1,72 @@
+import java.util.Comparator;
+
+import components.map.Map;
+import components.map.Map1L;
+import components.queue.Queue;
+import components.queue.Queue1L;
+import components.simplereader.SimpleReader;
+import components.simplereader.SimpleReader1L;
+import components.simplewriter.SimpleWriter;
+import components.simplewriter.SimpleWriter1L;
+
+
+public final class TagCloudGenerator {
+	
+	private static final int MAXIMUM_FONT = 48;
+	private static final int MINIMUM_FONT = 11;
+	
+	
+	class SortingINT implements Comparator<Integer>	{
+		@Override
+		public int compare(Integer o1, Integer o2) {		
+			return o1.compareTo(o2);
+		}
+		
+	}
+	
+	public static void wordCounter(Map<String, Integer> m, SimpleReader in)	{
+		
+	}
+	
+	public static void outputHTML(Map<String, Integer> m, SimpleWriter out, String inputFile)	{
+		out.println("<html>");
+		out.println("\t<head>");
+		out.println("\t\t<title> Top 100 words in" + inputFile + "</title>");
+		out.println("\t\t<link href=\"http://web.cse.ohio-state.edu/software/2231/web-sw2/assignments/projects/tag-cloud-generator/data/tagcloud.css\" rel=\"stylesheet\" type=\"text/css\">");
+		out.println("\t</head>");
+		out.println("\t<body>");
+		out.println("\t\t<h2>Top 100 words in" + inputFile + "</h2>");
+		out.println("\t\t<hr>");
+		out.println("\t\t<div class=\"cdiv\">");
+		out.println("\t\t\t<p class=\"cbox\">");
+		
+	}
+	
+
+	
+	public static void main(String[] args)	{
+		SimpleWriter out = new SimpleWriter1L();
+		SimpleReader in = new SimpleReader1L();
+		
+		out.print("What's the input file's name ? : ");
+		String inputfileName = in.nextLine();
+		
+		out.print("What's the output file's name ? : ");
+		String outputfileName = in.nextLine();
+		
+		SimpleWriter opOnFile = new SimpleWriter1L(outputfileName);
+		SimpleReader ipFromFile = new SimpleReader1L(inputfileName);
+		
+		Map<String, Integer> sortingMap = new Map1L<>();
+		Queue<String> sortingQueue = new Queue1L<>();
+		
+		wordCounter(sortingMap, ipFromFile);
+	 	
+		outputHTML(sortingMap, opOnFile, inputfileName);
+		
+		opOnFile.close();
+		ipFromFile.close();
+		out.close();
+		in.close();
+	}
+}
