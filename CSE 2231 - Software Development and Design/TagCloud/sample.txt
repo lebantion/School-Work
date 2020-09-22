@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title> Top 100 words in./data/alice.txt</title>
+		<link href="http://web.cse.ohio-state.edu/software/2231/web-sw2/assignments/projects/tag-cloud-generator/data/tagcloud.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h2>Top 100 words in./data/alice.txt</h2>
+		<hr>
+		<div class="cdiv">
+			<p class="cbox">
+				<span style="cursor:default" class="f22" title="count:25">`</span>
+				<span style="cursor:default" class="f22" title="count:39">`and</span>
+				<span style="cursor:default" class="f22" title="count:17">`And</span>
+				<span style="cursor:default" class="f22" title="count:20">`But</span>
+				<span style="cursor:default" class="f22" title="count:19">`but</span>
+				<span style="cursor:default" class="f22" title="count:15">`Come</span>
+				<span style="cursor:default" class="f22" title="count:15">`How</span>
+				<span style="cursor:default" class="f22" title="count:169">`I</span>
+				<span style="cursor:default" class="f22" title="count:40">`It</span>
+				<span style="cursor:default" class="f22" title="count:14">`it</span>
+				<span style="cursor:default" class="f22" title="count:23">`Oh</span>
+				<span style="cursor:default" class="f22" title="count:21">`That</span>
+				<span style="cursor:default" class="f22" title="count:15">`The</span>
+				<span style="cursor:default" class="f22" title="count:23">`Well</span>
+				<span style="cursor:default" class="f22" title="count:35">`What</span>
+				<span style="cursor:default" class="f22" title="count:19">`Why</span>
+				<span style="cursor:default" class="f22" title="count:41">`You</span>
+				<span style="cursor:default" class="f22" title="count:613">a</span>
+				<span style="cursor:default" class="f22" title="count:94">about</span>
+				<span style="cursor:default" class="f22" title="count:23">added</span>
+				<span style="cursor:default" class="f22" title="count:36">after</span>
+				<span style="cursor:default" class="f22" title="count:83">again</span>
+				<span style="cursor:default" class="f22" title="count:15">air</span>
+				<span style="cursor:default" class="f22" title="count:394">Alice</span>
+				<span style="cursor:default" class="f22" title="count:172">all</span>
+				<span style="cursor:default" class="f22" title="count:16">am</span>
+				<span style="cursor:default" class="f22" title="count:52">an</span>
+				<span style="cursor:default" class="f22" title="count:763">and</span>
+				<span style="cursor:default" class="f22" title="count:50">And</span>
+				<span style="cursor:default" class="f22" title="count:22">another</span>
+				<span style="cursor:default" class="f22" title="count:14">anxiously</span>
+				<span style="cursor:default" class="f22" title="count:38">any</span>
+				<span style="cursor:default" class="f22" title="count:19">anything</span>
+				<span style="cursor:default" class="f22" title="count:42">are</span>
+				<span style="cursor:default" class="f22" title="count:15">arm</span>
+				<span style="cursor:default" class="f22" title="count:242">as</span>
+				<span style="cursor:default" class="f22" title="count:14">As</span>
+				<span style="cursor:default" class="f22" title="count:17">asked</span>
+				<span style="cursor:default" class="f22" title="count:200">at</span>
+				<span style="cursor:default" class="f22" title="count:25">away</span>
+				<span style="cursor:default" class="f22" title="count:14">baby</span>
+				<span style="cursor:default" class="f22" title="count:38">back</span>
+				<span style="cursor:default" class="f22" title="count:145">be</span>
+				<span style="cursor:default" class="f22" title="count:38">been</span>
+				<span style="cursor:default" class="f22" title="count:36">before</span>
+				<span style="cursor:default" class="f22" title="count:58">began</span>
+				<span style="cursor:default" class="f22" title="count:14">beginning</span>
+				<span style="cursor:default" class="f22" title="count:19">being</span>
+				<span style="cursor:default" class="f22" title="count:14">better</span>
+				<span style="cursor:default" class="f22" title="count:16">Bill</span>
+				<span style="cursor:default" class="f22" title="count:16">bit</span>
+				<span style="cursor:default" class="f22" title="count:14">both</span>
+				<span style="cursor:default" class="f22" title="count:114">but</span>
+				<span style="cursor:default" class="f22" title="count:17">But</span>
+				<span style="cursor:default" class="f22" title="count:54">by</span>
+				<span style="cursor:default" class="f22" title="count:15">called</span>
+				<span style="cursor:default" class="f22" title="count:40">came</span>
+				<span style="cursor:default" class="f22" title="count:57">can</span>
+				<span style="cursor:default" class="f22" title="count:26">Cat</span>
+				<span style="cursor:default" class="f22" title="count:27">Caterpillar</span>
+				<span style="cursor:default" class="f22" title="count:25">come</span>
+				<span style="cursor:default" class="f22" title="count:73">could</span>
+				<span style="cursor:default" class="f22" title="count:26">course</span>
+				<span style="cursor:default" class="f22" title="count:17">court</span>
+				<span style="cursor:default" class="f22" title="count:20">cried</span>
+				<span style="cursor:default" class="f22" title="count:19">curious</span>
+				<span style="cursor:default" class="f22" title="count:27">d</span>
+				<span style="cursor:default" class="f22" title="count:29">day</span>
+				<span style="cursor:default" class="f22" title="count:28">dear</span>
+				<span style="cursor:default" class="f22" title="count:60">did</span>
+				<span style="cursor:default" class="f22" title="count:14">didn</span>
+				<span style="cursor:default" class="f22" title="count:68">do</span>
+				<span style="cursor:default" class="f22" title="count:16">doesn</span>
+				<span style="cursor:default" class="f22" title="count:49">don</span>
+				<span style="cursor:default" class="f22" title="count:15">done</span>
+				<span style="cursor:default" class="f22" title="count:30">door</span>
+				<span style="cursor:default" class="f22" title="count:40">Dormouse</span>
+				<span style="cursor:default" class="f22" title="count:99">down</span>
+				<span style="cursor:default" class="f22" title="count:42">Duchess</span>
+				<span style="cursor:default" class="f22" title="count:17">eat</span>
+				<span style="cursor:default" class="f22" title="count:17">end</span>
+				<span style="cursor:default" class="f22" title="count:18">enough</span>
+				<span style="cursor:default" class="f22" title="count:17">even</span>
+				<span style="cursor:default" class="f22" title="count:20">ever</span>
+				<span style="cursor:default" class="f22" title="count:29">eyes</span>
+				<span style="cursor:default" class="f22" title="count:15">face</span>
+				<span style="cursor:default" class="f22" title="count:19">feet</span>
+				<span style="cursor:default" class="f22" title="count:23">felt</span>
+				<span style="cursor:default" class="f22" title="count:21">find</span>
+				<span style="cursor:default" class="f22" title="count:44">first</span>
+				<span style="cursor:default" class="f22" title="count:134">for</span>
+				<span style="cursor:default" class="f22" title="count:30">found</span>
+				<span style="cursor:default" class="f22" title="count:34">from</span>
+				<span style="cursor:default" class="f22" title="count:16">garden</span>
+				<span style="cursor:default" class="f22" title="count:44">get</span>
+				<span style="cursor:default" class="f22" title="count:22">getting</span>
+				<span style="cursor:default" class="f22" title="count:47">go</span>
+				<span style="cursor:default" class="f22" title="count:27">going</span>
+				<span style="cursor:default" class="f22" title="count:26">good</span>
+				<span style="cursor:default" class="f22" title="count:45">got</span>
+			</p>
+		</</div>
+	</body>
+</html>
